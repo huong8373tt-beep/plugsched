@@ -52,7 +52,7 @@ def glob(pattern, _cwd='.'):
 
 
 def get_kernel_paths(kernel_dir, vmlinux_dir=None):
-    """Return the kernel artifacts used by init and dev_init."""
+    """Return the kernel artifacts used by init, dev_init, and build."""
     kernel_dir = os.path.abspath(kernel_dir)
     vmlinux_dir = kernel_dir if vmlinux_dir is None else os.path.abspath(vmlinux_dir)
     return (
